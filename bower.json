@@ -1,0 +1,11 @@
+{
+  "name": "deveo-icons",
+  "authors": [
+    "Liviu Anghelina <liviu@deveo.com>",
+    "Veli-Matti Luoto <vellu@deveo.com>"
+  ],
+  "description": "Deveo icon font",
+  "main": "css/deveo-icons.css",
+  "license": "MIT",
+  "homepage": "https://deveo.com"
+}

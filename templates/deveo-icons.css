@@ -1,0 +1,29 @@
+@font-face {
+  font-family: '<%= fontName %>';
+  src: url('<%= fontPath %><%= fontName %>.eot');
+  src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
+    url('<%= fontPath %><%= fontName %>.woff') format('woff'),
+    url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
+    url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+}
+
+.<%= className %> {
+  display: inline-block;
+  color: inherit;
+  font-family: deveo-icons;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.<%= className %>-small  { font-size: 11px; }
+.<%= className %>-medium { font-size: 16px; }
+.<%= className %>-large  { font-size: 20px; }
+.<%= className %>-xlarge { font-size: 22px; }
+
+<% _.each(glyphs, function(glyph) { %>.<%= className %>-<%= glyph.name %>:before { content: '\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>' }
+<% }); %>
