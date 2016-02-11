@@ -10,14 +10,19 @@ gulp.task('iconfont', function() {
       formats: ['ttf', 'eot', 'svg', 'woff']
     }))
     .on('glyphs', function(glyphs/*, options */) {
+      var options = {
+        glyphs: glyphs,
+        fontName: 'deveo-icons',
+        fontPath: '../fonts/',
+        className: 'deveo-icons'
+      };
       gulp.src('templates/deveo-icons.css')
-        .pipe(consolidate('lodash', {
-          glyphs: glyphs,
-          fontName: 'deveo-icons',
-          fontPath: 'fonts/',
-          className: 'deveo-icons'
-        }))
-        .pipe(gulp.dest('css/'));
+        .pipe(consolidate('lodash', options))
+        .pipe(gulp.dest('dist/css/'));
+
+      gulp.src('templates/deveo-icons.html')
+        .pipe(consolidate('lodash', options))
+        .pipe(gulp.dest('dist/'));
     })
-    .pipe(gulp.dest('fonts/'));
+    .pipe(gulp.dest('dist/fonts/'));
 });
