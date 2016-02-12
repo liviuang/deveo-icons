@@ -25,5 +25,19 @@
 .<%= className %>-large  { font-size: 20px; }
 .<%= className %>-xlarge { font-size: 22px; }
 
+.<%= className %>.black  { color: #000000; }
+.<%= className %>.blue   { color: #3589c4; }
+.<%= className %>.blue2  { color: #87bbd6; }
+.<%= className %>.dark   { color: #5d5f68; }
+.<%= className %>.darker { color: #142630; }
+.<%= className %>.green  { color: #22d792; }
+.<%= className %>.green2 { color: #8ec2b0; }
+.<%= className %>.grey   { color: #8394a0; }
+.<%= className %>.grey2  { color: #9094a3; }
+.<%= className %>.purple { color: #ad91cb; }
+.<%= className %>.red    { color: #d87f6f; }
+.<%= className %>.red2   { color: #da9d9d; }
+.<%= className %>.white  { color: #ffffff; }
+
 <% _.each(glyphs, function(glyph) { %>.<%= className %>-<%= glyph.name %>:before { content: '\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>' }
 <% }); %>
