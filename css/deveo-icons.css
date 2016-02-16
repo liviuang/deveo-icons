@@ -25,6 +25,20 @@
 .deveo-icons-large  { font-size: 20px; }
 .deveo-icons-xlarge { font-size: 22px; }
 
+.deveo-icons.black  { color: #000000; }
+.deveo-icons.blue   { color: #3589c4; }
+.deveo-icons.blue2  { color: #87bbd6; }
+.deveo-icons.dark   { color: #5d5f68; }
+.deveo-icons.darker { color: #142630; }
+.deveo-icons.green  { color: #22d792; }
+.deveo-icons.green2 { color: #8ec2b0; }
+.deveo-icons.grey   { color: #8394a0; }
+.deveo-icons.grey2  { color: #9094a3; }
+.deveo-icons.purple { color: #ad91cb; }
+.deveo-icons.red    { color: #d87f6f; }
+.deveo-icons.red2   { color: #da9d9d; }
+.deveo-icons.white  { color: #ffffff; }
+
 .deveo-icons-accept-circle-alt:before { content: '\EA01' }
 .deveo-icons-accept-circle:before { content: '\EA02' }
 .deveo-icons-accept:before { content: '\EA03' }
