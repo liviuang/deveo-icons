@@ -9,7 +9,8 @@ gulp.task('iconfont', function() {
     .pipe(iconfont({
       fontName: 'deveo-icons',
       prependUnicode: true,
-      formats: ['ttf', 'eot', 'svg', 'woff']
+      formats: ['ttf', 'eot', 'svg', 'woff'],
+      descent: 10
     }))
     .on('glyphs', function(glyphs/*, options */) {
       var options = {
