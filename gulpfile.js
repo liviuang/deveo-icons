@@ -8,7 +8,7 @@ gulp.task('iconfont', function() {
   return gulp.src(['icons/*.svg'])
     .pipe(iconfont({
       fontName: 'deveo-icons',
-      appendUnicode: true,
+      prependUnicode: true,
       formats: ['ttf', 'eot', 'svg', 'woff']
     }))
     .on('glyphs', function(glyphs/*, options */) {
