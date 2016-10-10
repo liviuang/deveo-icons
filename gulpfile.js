@@ -16,7 +16,8 @@ gulp.task('iconfont', function() {
         glyphs: glyphs,
         fontName: 'deveo-icons',
         fontPath: '../fonts/',
-        className: 'deveo-icons'
+        className: 'deveo-icons',
+        version: '1.0.0'
       };
 
       gulp.src('templates/deveo-icons.css')
