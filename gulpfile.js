@@ -7,9 +7,11 @@ var consolidate = require('gulp-consolidate');
 gulp.task('iconfont', function() {
   return gulp.src(['icons/*.svg'])
     .pipe(iconfont({
+      fontHeight: 1000,
       fontName: 'deveo-icons',
       formats: ['ttf', 'eot', 'svg', 'woff'],
-      descent: 10
+      descent: 200,
+      normalize: true
     }))
     .on('glyphs', function(glyphs/*, options */) {
       var options = {
