@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'deveo-icons';
-  src: url('../fonts/deveo-icons.eot?v=1.0.0');
-  src: url('../fonts/deveo-icons.eot?#iefix&v=1.0.0') format('eot'),
-    url('../fonts/deveo-icons.woff?v=1.0.0') format('woff'),
-    url('../fonts/deveo-icons.ttf?v=1.0.0') format('truetype'),
-    url('../fonts/deveo-icons.svg?v=1.0.0#deveo-icons') format('svg');
+  src: url('../fonts/deveo-icons.eot?v=1.0.1');
+  src: url('../fonts/deveo-icons.eot?#iefix&v=1.0.1') format('eot'),
+    url('../fonts/deveo-icons.woff?v=1.0.1') format('woff'),
+    url('../fonts/deveo-icons.ttf?v=1.0.1') format('truetype'),
+    url('../fonts/deveo-icons.svg?v=1.0.1#deveo-icons') format('svg');
 }
 
 .deveo-icon {
